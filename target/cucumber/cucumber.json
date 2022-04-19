@@ -1,1 +1,258 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8016323500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Intial Set should be done",
+            "match": {
+              "location": "AccountCreate.browserCall()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Scanerio1",
+        "description": "",
+        "id": "login;scanerio1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3875439001,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User wants to login to Site \"https://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AccountCreate.user_wants_to_login_to_Site(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7894600000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Intial Set should be done",
+            "match": {
+              "location": "AccountCreate.browserCall()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Scanerio2",
+        "description": "",
+        "id": "login;scanerio2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21812076300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User wants to login to Site \"http://www.airtel.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.airtel.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AccountCreate.user_wants_to_login_to_Site(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7895194700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Intial Set should be done",
+            "match": {
+              "location": "AccountCreate.browserCall()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Scanerio3",
+        "description": "",
+        "id": "login;scanerio3",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16170479101,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User wants to login to Site \"http://www.flipkart.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.flipkart.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AccountCreate.user_wants_to_login_to_Site(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7894631200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Intial Set should be done",
+            "match": {
+              "location": "AccountCreate.browserCall()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Scanerio4",
+        "description": "",
+        "id": "login;scanerio4",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5762922700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User wants to login to Site \"http://www.amazon.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.amazon.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AccountCreate.user_wants_to_login_to_Site(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7895207699,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Intial Set should be done",
+            "match": {
+              "location": "AccountCreate.browserCall()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Scanerio5",
+        "description": "",
+        "id": "login;scanerio5",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28151859000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User wants to login to Site \"http://www.olx.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.olx.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AccountCreate.user_wants_to_login_to_Site(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/Feature.feature",
+    "tags": []
+  }
+]

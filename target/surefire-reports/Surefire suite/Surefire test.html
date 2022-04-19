@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 19 18:57:05 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (577 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scanerio2", "Login"</td>
+<td><div><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.airtel.com&quot;(src/test/java/Features/Feature.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace503502230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503502230'><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.airtel.com&quot;(src/test/java/Features/Feature.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner.TestRunner@737996a0</td></tr>
+<tr>
+<td title='TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scanerio4", "Login"</td>
+<td><div><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.amazon.com&quot;(src/test/java/Features/Feature.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2078672572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078672572'><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.amazon.com&quot;(src/test/java/Features/Feature.feature:16)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner.TestRunner@737996a0</td></tr>
+<tr>
+<td title='TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scanerio1", "Login"</td>
+<td><div><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;https://www.google.com&quot;(src/test/java/Features/Feature.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1445754153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1445754153'><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;https://www.google.com&quot;(src/test/java/Features/Feature.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner.TestRunner@737996a0</td></tr>
+<tr>
+<td title='TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scanerio5", "Login"</td>
+<td><div><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.olx.com&quot;(src/test/java/Features/Feature.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2040908800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040908800'><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.olx.com&quot;(src/test/java/Features/Feature.feature:20)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner.TestRunner@737996a0</td></tr>
+<tr>
+<td title='TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scanerio3", "Login"</td>
+<td><div><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.flipkart.com&quot;(src/test/java/Features/Feature.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2015092784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015092784'><pre>java.lang.NullPointerException
+	at StepDefination.AccountCreate.user_wants_to_login_to_Site(AccountCreate.java:49)
+	at ?.User wants to login to Site &quot;http://www.flipkart.com&quot;(src/test/java/Features/Feature.feature:12)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner.TestRunner@737996a0</td></tr>
+</table><p>
+</body>
+</html>

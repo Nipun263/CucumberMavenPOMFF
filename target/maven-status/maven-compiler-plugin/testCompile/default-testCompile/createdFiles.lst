@@ -1,6 +1,5 @@
 com\pages\UserCredentialPage_NewUser.class
-stepDefination\AccountCreate.class
-TestRunner\RerunFailedScanerios.class
+StepDefination\AccountCreate.class
 Utility\BrowserFactory.class
 com\pages\SignUpPage.class
 TestRunner\TestRunner.class

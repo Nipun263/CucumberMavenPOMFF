@@ -1,21 +1,25 @@
 package TestRunner;
 
-import org.junit.runner.RunWith;
+import org.testng.annotations.DataProvider;
+
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Projects\\CucumberWithMaven\\src\\test\\java\\Features\\Feature.Feature",
-glue={"stepDefination"} , monochrome = true , tags = {"@ExistingUser"} ,
-plugin= {"pretty","html:target/site/cucmber-pretty", "json:target/cucumber/cucumber.json",
-	"rerun:target/failed_scenarios.txt"}
 
-)
 
+@CucumberOptions(features = "src/test/java/Features", glue = {"StepDefination"}, monochrome = true, 
+plugin = { "pretty","html:target/Cucumber.html", "json:target/cucumber/cucumber.json" })
+
+	
 
 public class TestRunner extends AbstractTestNGCucumberTests {
-	
-	
-
+ 
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
+    
+    
 }
+	

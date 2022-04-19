@@ -1,65 +1,23 @@
 Feature:Login
 
-Background: Run all the steps for all Scanerio
-Given User wants to pass the user credentials
-|http://automationpractice.com/index.php|
+Background:
+Given Intial Set should be done 
+
+Scenario: Scanerio1
+Given User wants to login to Site "https://www.google.com"
 
 
+Scenario: Scanerio2
+Given User wants to login to Site "http://www.airtel.com"
 
 
-@NewUserCreation
-Scenario Outline: CreateAccount_User
-Then user is required to pass the credentials "<FirstName>" , "<UserLastName>" , "<Password>" 
-|4|3|2021|263,12343|Panchkula|Alaska|
-And User has to pass rest of the details "<zipCode_Passed>" ,"<Mobile_NumPassed>"
-And verify the account creation is successful
-Then Logout user 
+Scenario: Scanerio3
+Given User wants to login to Site "http://www.flipkart.com"
 
 
-
-Examples:
-|FirstName|UserLastName|Password|zipCode_Passed|Mobile_NumPassed|
-|Nipun|Verma|ABCD@12991$$|00000|987456985|
+Scenario: Scanerio4
+Given User wants to login to Site "http://www.amazon.com"
 
 
-
-
-
-@NewUserCreation_UpdatedData
-Scenario Outline: CreateAccount
-Then user is required to pass the credentials "<FirstName>" , "<UserLastName>" , "<Password>" 
-|5|4|2021|266,12555|Chandigarh|Alaska|
-And User has to pass rest of the details "<zipCode_Passed>" ,"<Mobile_NumPassed>"
-And verify the account creation is successful
-Then Logout user 
-
-
-
-Examples:
-|FirstName|UserLastName|Password|zipCode_Passed|Mobile_NumPassed|
-|Nipun|Verma|ABCD@12991$$|00000|987456985|
-
-
-
-
-
-
-
-
-@ExistingUser
-Scenario Outline: ExistingUser 
-Then user wants to pass the existing user credentials "<ExsitingUserFirstName>" ,"<ExisitingUserLastName>"
-And verify the account creation is successful
-Then Logout user 
-
-
-Examples:
-|FirstName|UserLastName|Password|zipCode_Passed|Mobile_NumPassed|ExsitingUserFirstName|ExisitingUserLastName|
-|Nipun|Verma|ABCD@12991$$|00000|987456985|Dummy_User@test.com|Dummy_User@test.com|
-
-
-
-
-
-
-
+Scenario: Scanerio5
+Given User wants to login to Site "http://www.olx.com"

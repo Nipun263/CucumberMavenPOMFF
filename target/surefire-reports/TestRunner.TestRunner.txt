@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.805 sec
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1.026 s <<< FAILURE! - in TestRunner.TestRunner
+runScenario(TestRunner.TestRunner)  Time elapsed: 0.291 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(TestRunner.TestRunner)  Time elapsed: 0.292 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(TestRunner.TestRunner)  Time elapsed: 0.292 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(TestRunner.TestRunner)  Time elapsed: 0.292 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(TestRunner.TestRunner)  Time elapsed: 0.292 s  <<< FAILURE!
+java.lang.NullPointerException
+

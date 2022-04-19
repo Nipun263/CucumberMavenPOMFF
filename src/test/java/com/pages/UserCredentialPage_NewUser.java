@@ -8,25 +8,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import cucumber.api.DataTable;
+import io.cucumber.datatable.DataTable;
 
 public class UserCredentialPage_NewUser {
 	public static WebDriver driver ;
 	
-	public UserCredentialPage_NewUser( WebDriver driver) {
+	public UserCredentialPage_NewUser(WebDriver driver) {
 		this.driver=driver;
 	}
 	
 	
 	
-	public void passCredentialsForNewUser(String FirstName, String UserLastName, String Password, DataTable table) {
-		WebElement AlreadyExisitng = driver.findElement(By.xpath("//h3[contains(text(),'Already registered?')]"));
-		Boolean Flag = AlreadyExisitng.isDisplayed();
+	public void passCredentialsForNewUser(String FirstName, String UserLastName, String Password, DataTable table) throws InterruptedException {
 		
-		
-		Double RandomNumGen = Math.random();
-		driver.findElement(By.xpath("//*[@id='email_create']")).sendKeys("Nipun" + RandomNumGen + "@test.com");
-		driver.findElement(By.xpath("//*[@id='SubmitCreate']")).click();
+		Thread.sleep(3000);
 		
 		WebElement firstName =
 		driver.findElement(By.xpath("//*[@id='customer_firstname']"));
@@ -51,7 +46,7 @@ public class UserCredentialPage_NewUser {
 	    WebElement yearDD = driver.findElement(By.xpath("//*[@id='uniform-years']"));
 		WebElement year = driver.findElement(By.xpath("//*[@id='years']"));
 		
-		List<List<String>> data = table.raw();
+		List<List<String>> data = table.asLists();
 		String dateSelected =  data.get(0).get(0);
 		String monthSelected =  data.get(0).get(1);
 		String YearSelected =  data.get(0).get(2);
@@ -86,10 +81,6 @@ public class UserCredentialPage_NewUser {
 		
 		WebElement state = driver.findElement(By.name("id_state"));
 		Select select1 = new Select(state);
-		/*
-		 * Actions action = new Actions(driver);
-		 * action.moveToElement(state).click().build().perform();
-		 */
 		select1.selectByVisibleText(state_Passed);
 		  
 	}

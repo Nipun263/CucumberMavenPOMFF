@@ -1,78 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-10T13:58:33 IST" name="Default suite" finished-at="2022-02-10T13:58:34 IST" duration-ms="299">
+  <suite name="Default suite" duration-ms="36604" started-at="2022-04-19T19:15:12 IST" finished-at="2022-04-19T19:15:49 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@19932c16]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-10T13:58:33 IST" name="Default test" finished-at="2022-02-10T13:58:34 IST" duration-ms="299">
+    <test name="Default test" duration-ms="36604" started-at="2022-04-19T19:15:12 IST" finished-at="2022-04-19T19:15:49 IST">
       <class name="TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.TestRunner@19932c16]" started-at="2022-02-10T13:58:33 IST" name="setUpClass" finished-at="2022-02-10T13:58:34 IST" duration-ms="216" status="PASS">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="setUpClass" is-config="true" duration-ms="174" started-at="2022-04-19T19:15:12 IST" finished-at="2022-04-19T19:15:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@19932c16]" started-at="2022-02-10T13:58:34 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-02-10T13:58:34 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.IllegalArgumentException: Not a file or directory: C:\Projects\CucumberWithMaven\src\test\java\Features\Feature.Feature]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.IllegalArgumentException: Not a file or directory: C:\Projects\CucumberWithMaven\src\test\java\Features\Feature.Feature
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Projects\CucumberWithMaven\src\test\java\Features\Feature.Feature
-at cucumber.runtime.io.FileResourceIterator$FileIterator.<init>(FileResourceIterator.java:54)
-at cucumber.runtime.io.FileResourceIterator.<init>(FileResourceIterator.java:20)
-at cucumber.runtime.io.FileResourceIterable.iterator(FileResourceIterable.java:19)
-at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:103)
-at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
-at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
-at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:239)
-at cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:85)
-at cucumber.api.testng.TestNGCucumberRunner.provideFeatures(TestNGCucumberRunner.java:94)
-at cucumber.api.testng.AbstractTestNGCucumberTests.features(AbstractTestNGCucumberTests.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="runScenario" duration-ms="36246" started-at="2022-04-19T19:15:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-19T19:15:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scanerio5"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@19932c16]" started-at="2022-02-10T13:58:34 IST" name="tearDownClass" finished-at="2022-02-10T13:58:34 IST" duration-ms="57" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="runScenario" duration-ms="12088" started-at="2022-04-19T19:15:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-19T19:15:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scanerio1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="runScenario" duration-ms="13857" started-at="2022-04-19T19:15:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-19T19:15:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scanerio4"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="runScenario" duration-ms="24264" started-at="2022-04-19T19:15:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-19T19:15:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scanerio3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="runScenario" duration-ms="29906" started-at="2022-04-19T19:15:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-19T19:15:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scanerio2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@4923ab24]" name="tearDownClass" is-config="true" duration-ms="103" started-at="2022-04-19T19:15:48 IST" finished-at="2022-04-19T19:15:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
